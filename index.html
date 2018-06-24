@@ -9,15 +9,61 @@
     <title>Peter Komlosi - Resume</title>
     <link rel="icon" type="image/png" href="favicon.png" />
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,700i|Source+Sans+Pro" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://cdn.rawgit.com/makotot/scrollspy/master/css/main.css"> -->
     <link href="style.css" rel="stylesheet">
 </head>
 
 <body>
+
     <div class="container">
+
+        <div class="scrollspy">
+            <div id="main-spy">
+                <ul>
+                    <!-- <li>
+                        <a href="#top">Top</a>
+                    </li> -->
+                    <li>Content</li>
+                    <li>
+                        <a href="#profile">Profile</a>
+                    </li>
+                    <li>
+                        <a href="#history">History</a>
+                    </li>
+                    <li>
+                        <a href="#education">Education</a>
+                    </li>
+                    <li>
+                        <a href="#projects">Projects</a>
+                    </li>
+                </ul>
+            </div>
+            <div id="side-spy">
+                <ul>
+                    <li>Sidebar</li>
+                    <li>
+                        <a href="#info">Info</a>
+                    </li>
+                    <li>
+                        <a href="#skills">Skills</a>
+                    </li>
+                    <li>
+                        <a href="#other">Other</a>
+                    </li>
+                    <li>
+                        <a href="#languages">Languages</a>
+                    </li>
+                    <li>
+                        <a href="#social">Social</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
 
 
         <div class="main">
-            <div class="title">
+            <div class="title" id="top">
                 <div class="title_name">Peter Komlosi</div>
                 <div class="title_position">Web Developer</div>
                 <svg class="title_svg" viewbox="0 0 100 100" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
@@ -28,12 +74,12 @@
                 </svg>
             </div>
 
-            <div class="main_section">
+            <div class="main_section" id="profile">
                 <div class="section_title is-hidden">Profile</div>
                 <div class="main_content">
                     <div class="main_content-item is-hidden delay">
                         <div class="main_content-caption">
-                            <p>I'm a mostly self-taught web developer, interested in learning and adopting the latest web technologies to all the different screens we use day by day. Altough I have some experience with back-end systems and database management, my passion is in building rich, interactive and modern front-facing web applications.</p>
+                            <p>I'm a web developer interested in learning and adopting the latest web technologies to all the different screens we use day by day. Altough I have some experience with back-end systems and database management, my passion is in building rich, interactive and modern front-facing web applications.</p>
                         </div>
                     </div>
                     <!-- <div class="main_content-item is-hidden">
@@ -45,7 +91,7 @@
                 </div>
             </div>
 
-            <div class="main_section">
+            <div class="main_section" id="history">
                 <div class="section_title is-hidden">Employment history</div>
                 <div class="main_content">
                     <div class="main_content-item is-hidden">
@@ -71,7 +117,7 @@
                 </div>
             </div>
 
-            <div class="main_section">
+            <div class="main_section" id="education">
                 <div class="section_title is-hidden">Education</div>
                 <div class="main_content">
                     <div class="main_content-item is-hidden">
@@ -106,8 +152,8 @@
                 </div>
             </div>
 
-            <div class="main_section">
-                <div class="section_title is-hidden" id="projects">Personal projects</div>
+            <div class="main_section" id="projects">
+                <div class="section_title is-hidden">Personal projects</div>
                 <div class="main_content">
                     <div class="main_content-item is-hidden">
                         <div class="main_content-title">
@@ -223,8 +269,8 @@
 
 
 
-        <div class="sidebar">
-            <div class="sidebar_section is-hidden">
+        <div class="sidebar is-hidden">
+            <div class="sidebar_section is-hidden" id="info">
                 <div class="section_title">Info</div>
                 <div class="sidebar_contacts-block">
                     <div class="sidebar_contact">Location</div>
@@ -248,43 +294,19 @@
                 </div>
             </div>
 
-            <div class="sidebar_section is-hidden">
-                <div class="section_title">Skills</div>
+            <div class="sidebar_section is-hidden" id="skills">
+                <div class="section_title">Technical skills</div>
                 <div class="sidebar_skill">
                     <div class="sidebar_skill-label">HTML, CSS</div>
-                    <div class="sidebar_skill-progress">
-                        <div class="sidebar_circle is-hidden"></div>
-                        <div class="sidebar_circle is-hidden"></div>
-                        <div class="sidebar_circle is-hidden"></div>
-                        <div class="sidebar_circle is-hidden"></div>
-                        <div class="sidebar_circle is-hidden"></div>
-                    </div>
-                </div>
-                <div class="sidebar_skill">
-                    <div class="sidebar_skill-label">MySQL</div>
-                    <div class="sidebar_skill-progress">
-                        <div class="sidebar_circle is-hidden"></div>
-                        <div class="sidebar_circle is-hidden"></div>
-                        <div class="sidebar_circle is-hidden"></div>
-                        <div class="sidebar_circle is-hidden is-empty"></div>
-                        <div class="sidebar_circle is-hidden is-empty"></div>
-                    </div>
                 </div>
                 <br>
-                <div class="sidebar_skill">
-                    <div class="sidebar_skill-label">Latest EcmaScript</div>
-                    <div class="sidebar_skill-progress">
-                        <div class="sidebar_circle is-hidden"></div>
-                        <div class="sidebar_circle is-hidden"></div>
-                        <div class="sidebar_circle is-hidden"></div>
-                        <div class="sidebar_circle is-hidden"></div>
-                        <div class="sidebar_circle is-hidden is-empty"></div>
-                    </div>
+                <div class="sidebar_skill strong">
+                    <div class="sidebar_skill-label strong" title="Including the latest EcmaScript features">Javascript</div>
                 </div>
                 <div class="sidebar_skill">
-                    <div class="sidebar_skill-label">Node.js &amp; npm</div>
+                    <div class="sidebar_skill-label">Node.js, npm</div>
                 </div>
-                <div class="sidebar_skill">
+                <div class="sidebar_skill strong">
                     <div class="sidebar_skill-label">React, Vue.js</div>
                 </div>
                 <div class="sidebar_skill">
@@ -293,40 +315,39 @@
                 <br>
                 <div class="sidebar_skill">
                     <div class="sidebar_skill-label">PHP 5.6 - 7.0</div>
-                    <div class="sidebar_skill-progress">
-                        <div class="sidebar_circle is-hidden"></div>
-                        <div class="sidebar_circle is-hidden"></div>
-                        <div class="sidebar_circle is-hidden"></div>
-                        <div class="sidebar_circle is-hidden is-empty"></div>
-                        <div class="sidebar_circle is-hidden is-empty"></div>
-                    </div>
                 </div>
                 <div class="sidebar_skill">
-                    <div class="sidebar_skill-label">Smarty (templating engine)</div>
+                    <div class="sidebar_skill-label" title="Smarty templating engine">Smarty 2 & 3</div>
                 </div>
-                <!-- <div class="sidebar_skill">
-                    <div class="sidebar_skill-label">Python (Django)</div>
-                    <div class="sidebar_skill-progress">
-                        <div class="sidebar_circle is-hidden"></div>
-                        <div class="sidebar_circle is-hidden"></div>
-                        <div class="sidebar_circle is-hidden is-empty"></div>
-                        <div class="sidebar_circle is-hidden is-empty"></div>
-                        <div class="sidebar_circle is-hidden is-empty"></div>
-                    </div>
-                </div> -->
-                <br>
+                <div class="sidebar_skill">
+                    <div class="sidebar_skill-label">MySQL</div>
+                </div>
+            </div>
+
+            <div class="sidebar_section is-hidden" id="other">
+                <div class="section_title">Other relevant skills</div>
                 <div class="sidebar_skill">
                     <div class="sidebar_skill-label">Git / GitHub</div>
                 </div>
                 <div class="sidebar_skill">
-                    <div class="sidebar_skill-label" title="Amazon Web Services">AWS management</div>
+                    <div class="sidebar_skill-label" title="Amazon Web Services">AWS cloud infrastructure</div>
                 </div>
                 <div class="sidebar_skill">
                     <div class="sidebar_skill-label">Linux server management</div>
                 </div>
+                <br>
+                <div class="sidebar_skill">
+                    <div class="sidebar_skill-label">Object Oriented Programming</div>
+                </div>
+                <div class="sidebar_skill">
+                    <div class="sidebar_skill-label">MVC & MVVM patterns</div>
+                </div>
+                <div class="sidebar_skill">
+                    <div class="sidebar_skill-label">Network architectures</div>
+                </div>
             </div>
 
-            <div class="sidebar_section is-hidden">
+            <div class="sidebar_section is-hidden" id="languages">
                 <div class="section_title">Languages</div>
                 <div class="sidebar_skill">
                     <div class="sidebar_skill-label">Hungarian</div>
@@ -336,27 +357,23 @@
                 </div>
             </div>
 
-            <div class="sidebar_section is-hidden">
-                <div class="section_title">Social profiles</div>
-                <div class="sidebar_socials">
-                    <div class="sidebar_socials-item">
-                        <!-- <div class="sidebar_socials-label">GitHub</div> -->
-                        <a class="sidebar_socials-link" href="https://github.com/thavixt" target="_blank" rel="noopener">GitHub</a>
-                    </div>
+            <div class="sidebar_section is-hidden" id="social">
+                <div class="section_title">Social</div>
+                <div class="sidebar_skill">
+                    <a class="sidebar_socials-link" href="https://github.com/thavixt" target="_blank" rel="noopener">github.com/thavixt</a>
+                    <p>You can find all of my current projects and experiments here, including
+                        <a href="https://github.com/thavixt/resume" target="blank" rel="noopener">this page</a>.</p>
                 </div>
-                <div class="sidebar_socials">
-                    <div class="sidebar_socials-item">
-                        <!-- <div class="sidebar_socials-label">Linkedin</div> -->
-                        <a class="sidebar_socials-link" href="https://www.linkedin.com/in/peter-komlosi-a92934125/" target="_blank" rel="noopener">LinkedIn</a>
-                    </div>
+                <div class="sidebar_skill">
+                    <a class="sidebar_socials-link" href="https://www.linkedin.com/in/peter-komlosi/" target="_blank" rel="noopener">linkedin.com/in/peter-komlosi</a>
                 </div>
             </div>
         </div>
 
-
     </div>
 
     <script src="https://unpkg.com/in-view@0.6.1/dist/in-view.min.js"></script>
+    <script src="https://cdn.rawgit.com/makotot/scrollspy/master/build/scrollspy.js"></script>
     <script src="main.js" defer></script>
 </body>
 
