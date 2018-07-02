@@ -34,12 +34,12 @@
     }, delay + 250);
 
     // https://github.com/makotot/scrollspy
-    const mainSpy = new ScrollSpy('#main-spy', {
+    /* const mainSpy = new ScrollSpy('#main-spy', {
         nav: '#main-spy > ul > li > a',
         className: 'active'
     });
     const sideSpy = new ScrollSpy('#side-spy', {
         nav: '#side-spy > ul > li > a',
         className: 'active'
-    });
+    }); */
 })();
