@@ -17,7 +17,7 @@
     --bg-sidebar: #111111;
     --accent: #bd3636;
     --accent_2: #bd3636;
-    --bg-title: #ececec;
+    --bg-title: #dadada;
     /* sizes */
     --sidebar-size: 300px;
     --max-width: 1000px;
@@ -50,7 +50,7 @@ body {
     padding: 0;
     width: 100%;
     background-color: var(--bg-main);
-    animation: fadeLoad 3s ease;
+    animation: fadeLoad 5s ease;
 }
 
 @keyframes fadeLoad {
@@ -203,17 +203,17 @@ a:hover {
 
 .title_svg path {
     stroke: var(--accent);
-    stroke-width: 3px;
+    stroke-width: 5px;
     fill: var(--bg-title);
     /* animate path */
     stroke-dasharray: 300;
     stroke-dashoffset: 600;
-    animation: dash 1s ease;
+    animation: dash 1.2s ease-out;
 }
 
 @keyframes dash {
     from {
-        stroke-dashoffset: 0;
+        stroke-dashoffset: -600;
     }
     to {
         stroke-dashoffset: 600;
@@ -322,7 +322,7 @@ a:hover {
 
 .sidebar_section {
     max-width: 20rem;
-    margin: 0 auto 8rem auto;
+    margin: 0 auto 4rem auto;
     transition: 0.5s all var(--transition-ease);
 }
 
@@ -354,19 +354,21 @@ a:hover {
 
 .sidebar_contact {
     width: 7.5rem;
+    color: var(--font-color_lighter);
 }
 
 .sidebar_contact-value {
     flex: 1;
     line-height: 1.4;
     text-align: right;
-    /* color: inherit; */
+    color: var(--font-color_lighter);
 }
 
-.sidebar_contact-value--email {
+.sidebar_contact-value.email {
     white-space: nowrap;
     word-wrap: break-word;
     word-break: break-all;
+    color: var(--accent);
 }
 
 .sidebar_skill {
@@ -374,6 +376,7 @@ a:hover {
     display: -ms-flexbox;
     display: flex; */
     margin-bottom: 1rem;
+    color: var(--font-color_lighter);
 }
 
 .sidebar_skill p {
